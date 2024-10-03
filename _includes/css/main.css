@@ -482,3 +482,12 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+
+.small-portfolio-img {
+    width: 150px; /* Set a width similar to other grid items */
+    height: 150px; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensures the image fits the square box */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin: 10px; /* Adds spacing around the image */
+}
