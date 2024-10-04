@@ -43,22 +43,38 @@ header img.img-responsive {
 /* Adjusted header padding */
 @media (min-width: 768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 150px; /* Reduced padding to keep header compact */
+        padding-bottom: 50px;
     }
 
     header .intro-text .name {
-        font-size: 50px;
+        font-size: 60px; /* Increased size slightly for emphasis */
+        line-height: 70px;
     }
 
     header .intro-text .skills {
-        font-size: 20px;
+        font-size: 28px; /* Balanced font size for skills */
+        line-height: 35px; /* Ensures it fits in one line */
+        font-weight: 400;
     }
 }
 
+header .intro-text {
+    margin-top: 50px; /* Adjusted spacing to keep it compact */
+}
+
+header .intro-text .name {
+    font-size: 50px; /* Default size for small screens */
+    line-height: 60px;
+    font-weight: 700;
+}
+
 header .intro-text .skills {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 24px; /* Reduced size to fit in one line */
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Portfolio Section */
@@ -164,4 +180,20 @@ footer .footer-above {
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
+}
+
+/* Smaller image size for the portfolio items */
+.small-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Ensure alignment for the header profile image */
+header img.img-responsive {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
 }
