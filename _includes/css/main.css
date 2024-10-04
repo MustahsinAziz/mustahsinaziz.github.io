@@ -552,3 +552,28 @@ footer .footer-below {
 .about-section h2, .about-section p {
   color: white;
 }
+
+/* Adjust the header layout to include the About text */
+header {
+  background: url('../assets/your-header-image.jpg') no-repeat center center; /* Use the same header image */
+  background-size: cover;
+  padding: 150px 0; /* Increase padding to accommodate text */
+}
+
+/* Style the profile image */
+header img.img-responsive {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* About text styles in the header */
+header .about-text {
+  text-align: center;
+  max-width: 600px; /* Limit the width */
+  margin: 0 auto;
+  font-size: 18px;
+}
+
