@@ -58,7 +58,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 40px; /* Reduced slightly to fit on larger screens */
+        font-size: 20px; /* Reduced slightly to fit on larger screens */
         line-height: 45px;
     }
 }
