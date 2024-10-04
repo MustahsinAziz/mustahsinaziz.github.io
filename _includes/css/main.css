@@ -48,16 +48,16 @@ header img.img-responsive {
     }
 
     header .intro-text .name {
-        font-size: 5em;
+        font-size: 50px;
     }
 
     header .intro-text .skills {
-        font-size: 2em;
+        font-size: 20px;
     }
 }
 
 header .intro-text .skills {
-    font-size: 2em;
+    font-size: 20px;
     font-weight: 300;
 }
 
