@@ -68,73 +68,84 @@ header .intro-text .skills {
     margin-bottom: 20px;
 }
 
+/* General Reset and Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 /* Portfolio Section */
-#portfolio {
-    margin-top: 50px; /* Added top margin for headroom */
+.portfolio-flex-grid .portfolio-item {
+    margin-bottom: 30px;
 }
 
-#portfolio .portfolio-item {
-    margin: 0 0 15px;
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+.portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    margin: 0 auto;
-    max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hover Effect */
+.portfolio-item .caption {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0; /* Ensure starting opacity is 0 */
-    background: rgba(44, 62, 80, 0.6);
-    transition: all ease 0.5s;
-}
-
-#portfolio .portfolio-item .portfolio-link:hover .caption {
-    opacity: 1; /* Display the caption on hover */
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-    visibility: hidden; /* Hide the text initially */
-}
-
-#portfolio .portfolio-item .portfolio-link:hover .caption .caption-content {
-    visibility: visible; /* Show text on hover */
-}
-
-/* New hover effect for portfolio */
-.portfolio-item .caption-content {
-    font-size: 20px;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px 10px;
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .portfolio-item:hover .caption {
     opacity: 1;
 }
 
-/* Simplified Flex Grid */
-.portfolio-flex-grid .portfolio-flex-row {
+.caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.caption-content h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Adjust Grid Spacing */
+.portfolio-flex-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.portfolio-flex-item {
-    flex: 1 0 32%;
-    margin: 0 0 30px;
-    text-align: center;
+/* Responsive Layout for Portfolio */
+@media (min-width: 768px) {
+    .portfolio-item {
+        width: 30%;
+    }
 }
+
+@media (max-width: 767px) {
+    .portfolio-item {
+        width: 45%;
+    }
+}
+
+/* Other Styles Adjusted for Alignment */
+
 
 /* Social Media Icon Styling */
 .btn-social {
