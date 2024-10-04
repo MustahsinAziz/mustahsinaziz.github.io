@@ -10,41 +10,32 @@ p.small {
     font-size: 16px;
 }
 
-h1, h2, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
-/* Header Section */
+/* Header Section with Fade-to-Black Effect */
 header {
     text-align: center;
     color: #fff;
-    background: url('../assets/website_bg.jpg') no-repeat center center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 1) 100%), url('../assets/website_bg.jpg') no-repeat center center;
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 100px; /* Reduced bottom padding */
+    padding-bottom: 80px; /* Reduced bottom padding for a shorter header */
 }
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 100px; /* Reduced bottom padding */
-}
-
-/* Profile Image */
-header img.img-responsive {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
+    padding-bottom: 80px; /* Reduced bottom padding */
 }
 
 /* Adjusted header padding for larger screens */
 @media (min-width: 768px) {
     header .container {
         padding-top: 150px;
-        padding-bottom: 120px; /* Reduced bottom padding for larger screens */
+        padding-bottom: 100px; /* Further reduced bottom padding for larger screens */
     }
 
     header .intro-text .name {
@@ -79,7 +70,7 @@ header .intro-text .skills {
 
 /* Portfolio Section */
 #portfolio {
-    margin-top: 50px; /* Added top margin */
+    margin-top: 50px; /* Added top margin for headroom */
 }
 
 #portfolio .portfolio-item {
