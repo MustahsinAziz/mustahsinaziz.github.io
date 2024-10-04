@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* Header Section */
 header {
     text-align: center;
     color: #fff;
@@ -31,16 +30,22 @@ header .container {
     padding-bottom: 50px;
 }
 
-/* Profile Image */
-header img.img-responsive {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
+/* Adjusted font sizes for the intro text */
+header .intro-text .name {
+    font-size: 70px; /* Increased the font size for the name */
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 20px;
 }
 
-/* Adjusted header padding */
+header .intro-text .skills {
+    font-size: 40px; /* Increased the font size for the skills */
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
     header .container {
         padding-top: 200px;
@@ -48,20 +53,24 @@ header img.img-responsive {
     }
 
     header .intro-text .name {
-        font-size: 5em;
+        font-size: 80px; /* Larger font size for bigger screens */
+        line-height: 90px;
     }
 
     header .intro-text .skills {
-        font-size: 3em;
+        font-size: 50px; /* Larger skills text for bigger screens */
     }
 }
 
+header .intro-text {
+    margin-top: 150px;
+}
+
 header .intro-text .skills {
-    font-size: 3em;
+    font-size: 1.25em;
     font-weight: 300;
 }
 
-/* Portfolio Section */
 #portfolio .portfolio-item {
     margin: 0 0 15px;
 }
@@ -95,7 +104,6 @@ header .intro-text .skills {
     color: #fff;
 }
 
-/* New hover effect for portfolio */
 .portfolio-item .caption-content {
     font-size: 20px;
     text-transform: uppercase;
@@ -108,7 +116,6 @@ header .intro-text .skills {
     opacity: 1;
 }
 
-/* Simplified Flex Grid */
 .portfolio-flex-grid .portfolio-flex-row {
     display: flex;
     justify-content: space-between;
@@ -147,6 +154,28 @@ header .intro-text .skills {
     background: #fff;
 }
 
+/* About Section */
+.about-section {
+    background: #2c3e50;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: white;
+}
+
+.about-section p {
+    color: #ddd;
+}
+
+/* Location Line Styling */
+.location-line i {
+    color: #f39c12;
+    margin-right: 5px;
+}
+
 /* Footer Adjustments */
 footer {
     color: #fff;
@@ -164,4 +193,20 @@ footer .footer-above {
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
+}
+
+/* Smaller image size for the portfolio items */
+.small-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Ensure alignment for the header profile image */
+header img.img-responsive {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
 }
