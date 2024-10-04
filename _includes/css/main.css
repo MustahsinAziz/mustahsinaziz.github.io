@@ -40,7 +40,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 20px; /* Reduced font size for skills to fit in one line */
+    font-size: 30px; /* Reduced font size for skills to fit in one line */
     font-weight: 400;
     line-height: 35px; /* Adjusted line height */
     margin-top: 10px;
@@ -58,7 +58,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 30px; /* Reduced slightly to fit on larger screens */
+        font-size: 40px; /* Reduced slightly to fit on larger screens */
         line-height: 45px;
     }
 }
