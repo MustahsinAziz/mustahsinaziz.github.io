@@ -38,17 +38,17 @@ footer:
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social Links
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+  - title: "envelope"    # Email icon using FontAwesome
+    url: "mailto:mustahsinaziz@gmail.com"
+  - title: "linkedin"    # LinkedIn icon
+    url: "https://www.linkedin.com/in/mustahsinaziz"
+  - title: "orcid"       # ORCID icon using custom icon or similar style
+    url: "https://orcid.org/0000-0001-7702-624X"
+  - title: "github"      # GitHub icon
+    url: "https://github.com/MustahsinAziz"
+
 
 # Postal address (add as many lines as necessary)
 address:
