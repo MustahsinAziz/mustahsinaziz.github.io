@@ -535,7 +535,7 @@ footer .footer-below {
 
 /* Extend the header image to the about section */
 .about-section {
-  background: url('../assets/website_bg.jpg') no-repeat center center; /* Use the same image as the header */
+  background: url('../assets/website_bg2.jpg') no-repeat center center; /* Use the same image as the header */
   background-size: cover;
   padding: 60px 0;
   position: relative;
