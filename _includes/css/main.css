@@ -23,12 +23,12 @@ header {
     background: url('../assets/website_bg.jpg') no-repeat center center;
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 150px; /* Increased bottom padding for visual balance */
 }
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 150px; /* Increased bottom padding */
 }
 
 /* Profile Image */
@@ -40,37 +40,37 @@ header img.img-responsive {
     display: block;
 }
 
-/* Adjusted header padding */
+/* Adjusted header padding for larger screens */
 @media (min-width: 768px) {
     header .container {
-        padding-top: 150px; /* Reduced padding to keep header compact */
-        padding-bottom: 50px;
+        padding-top: 150px;
+        padding-bottom: 200px; /* Increased bottom padding for larger screens */
     }
 
     header .intro-text .name {
-        font-size: 60px; /* Increased size slightly for emphasis */
+        font-size: 60px; /* Larger font size for the name */
         line-height: 70px;
     }
 
     header .intro-text .skills {
-        font-size: 28px; /* Balanced font size for skills */
-        line-height: 35px; /* Ensures it fits in one line */
+        font-size: 28px; /* Adjusted skills font size */
+        line-height: 35px;
         font-weight: 400;
     }
 }
 
 header .intro-text {
-    margin-top: 50px; /* Adjusted spacing to keep it compact */
+    margin-top: 50px; /* Adjusted margin for spacing */
 }
 
 header .intro-text .name {
-    font-size: 50px; /* Default size for small screens */
+    font-size: 50px; /* Default size for smaller screens */
     line-height: 60px;
     font-weight: 700;
 }
 
 header .intro-text .skills {
-    font-size: 24px; /* Reduced size to fit in one line */
+    font-size: 24px; /* Default skills font size for smaller screens */
     line-height: 30px;
     font-weight: 400;
     margin-top: 10px;
@@ -196,4 +196,26 @@ header img.img-responsive {
     border-radius: 50%;
     margin: 20px auto;
     display: block;
+}
+
+/* About Section */
+.about-section {
+    background: #2c3e50;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: white;
+}
+
+.about-section p {
+    color: #ddd;
+}
+
+/* Location Line Styling */
+.location-line i {
+    color: #f39c12;
+    margin-right: 5px;
 }
