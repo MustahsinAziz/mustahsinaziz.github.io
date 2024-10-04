@@ -29,19 +29,20 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i> Morgantown, West Virginia, USA
           </p>
         </div>
-
         <!-- Social Media Icons Section (Around the Web) -->
         <div class="social-icons" style="margin-top: 30px;">
           <ul class="list-inline">
-            {% for network in site.social %}
             <li>
-              <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+              <a href="mailto:youremail@example.com" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
             </li>
-            {% endfor %}
+            <li>
+              <a href="https://www.linkedin.com/in/your-profile" class="btn-social btn-outline"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://orcid.org/0000-0000-0000-0000" class="btn-social btn-outline"><i class="fa fa-id-card"></i></a> <!-- Placeholder for ORCID -->
+            </li>
+            <li>
+              <a href="https://github.com/your-profile" class="btn-social btn-outline"><i class="fa fa-github"></i></a>
+            </li>
           </ul>
         </div>
-
-      </div>
-    </div>
-  </div>
-</header>
