@@ -491,3 +491,44 @@ footer .footer-below {
     border-radius: 8px; /* Optional: Adds rounded corners */
     margin: 10px; /* Adds spacing around the image */
 }
+
+
+/* Smaller image size */
+.small-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* Hover effect for portfolio items */
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item .caption {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-item:hover .caption {
+  opacity: 1;
+}
+
+.caption-content {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
