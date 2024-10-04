@@ -39,7 +39,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 40px; /* Increased the font size for the skills */
+    font-size: 20px; /* Increased the font size for the skills */
     font-weight: 400;
     line-height: 50px;
     margin-top: 10px;
