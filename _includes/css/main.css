@@ -535,7 +535,7 @@ footer .footer-below {
 
 /* Extend the header image to the about section */
 .about-section {
-  background: url('../assets/website_bg2.jpg') no-repeat center center; /* Use the same image as the header */
+  background: url('../assets/website_bg.jpg') no-repeat center center; /* Use the same image as the header */
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -555,7 +555,7 @@ footer .footer-below {
 
 /* Adjust the header layout to include the About text */
 header {
-  background: url('../assets/website_bg2.jpg') no-repeat center center; /* Use the same header image */
+  background: url('../assets/website_bg.jpg') no-repeat center center; /* Use the same header image */
   background-size: cover;
   padding: 150px 0; /* Increase padding to accommodate text */
 }
