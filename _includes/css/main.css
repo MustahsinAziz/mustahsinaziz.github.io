@@ -95,23 +95,6 @@ body, html {
     color: #fff;
 }
 
-/* Portfolio Section Customizations */
-.portfolio-section {
-    padding: 60px 0; /* Add spacing */
-    background: #1c1e22; /* Background color for standalone page */
-}
-
-.portfolio-flex-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #1c1e22; /* Consistent background color */
-}
-
-.portfolio-flex-item {
-    width: 30%;
-    margin: 15px; /* Space between items */
-}
 
 /* Portfolio Grid */
 .portfolio-flex-grid {
