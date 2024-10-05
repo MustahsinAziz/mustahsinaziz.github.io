@@ -31,7 +31,6 @@ header .container {
     padding-bottom: 80px; /* Reduced bottom padding */
 }
 
-/* Adjusted header padding for larger screens */
 @media (min-width: 768px) {
     header .container {
         padding-top: 150px;
@@ -75,13 +74,36 @@ body, html {
 }
 
 /* Portfolio Section */
+.portfolio-section {
+    background-color: #2c3e50; /* Dark background for portfolio section */
+    color: white;
+    padding: 60px 0;
+}
+
+/* Center Portfolio Title */
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* Portfolio Grid */
+.portfolio-flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centered the grid */
+}
+
 .portfolio-flex-grid .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .portfolio-item {
     position: relative;
     overflow: hidden;
+    width: 250px; /* Reduced size of portfolio items */
+    height: 250px; /* Maintain square aspect ratio */
 }
 
 .portfolio-item .portfolio-link {
@@ -91,7 +113,7 @@ body, html {
 
 .portfolio-item img {
     width: 100%;
-    height: auto;
+    height: 100%; /* Adjusted height to match the new size */
 }
 
 /* Hover Effect */
@@ -124,17 +146,10 @@ body, html {
     margin-top: 0;
 }
 
-/* Adjust Grid Spacing */
-.portfolio-flex-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 /* Responsive Layout for Portfolio */
 @media (min-width: 768px) {
     .portfolio-item {
-        width: 30%;
+        width: 22%; /* Reduced width for larger screens */
     }
 }
 
@@ -143,9 +158,6 @@ body, html {
         width: 45%;
     }
 }
-
-/* Other Styles Adjusted for Alignment */
-
 
 /* Social Media Icon Styling */
 .btn-social {
