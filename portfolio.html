@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html>
-{% include head.html %}
-<body id="portfolio-page" class="portfolio">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mustahsin Aziz</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    {% include nav.html %}
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container text-center">
+            <h2 class="section-heading">Portfolio</h2>
+            <hr class="star-primary">
+            <div class="portfolio-flex-grid">
+                <!-- Portfolio Items -->
+                <div class="portfolio-flex-item">
+                    <a href="portfolio-details/project1.html">
+                        <div class="caption">
+                            <h4>Projects</h4>
+                        </div>
+                        <img src="assets/stockimg.webp" class="img-responsive" alt="Project 1">
+                    </a>
+                </div>
+                <div class="portfolio-flex-item">
+                    <a href="portfolio-details/project2.html">
+                        <div class="caption">
+                            <h4>Research</h4>
+                        </div>
+                        <img src="assets/stockimg.webp" class="img-responsive" alt="Project 2">
+                    </a>
+                </div>
+                <div class="portfolio-flex-item">
+                    <a href="portfolio-details/project3.html">
+                        <div class="caption">
+                            <h4>Teaching</h4>
+                        </div>
+                        <img src="assets/stockimg.webp" class="img-responsive" alt="Project 3">
+                    </a>
+                </div>
+                <!-- Repeat the structure for more projects -->
+            </div>
+        </div>
+    </section>
 
-  {% include nav.html %} <!-- Navigation Bar -->
-  
-  <!-- Portfolio Section -->
-  {% include portfolio_grid.html %} <!-- The grid section to display portfolio items -->
+    <!-- Footer -->
+    {% include footer.html %}
 
-  {% include footer.html %}
-  {% include js.html %}
-  
+    <!-- JavaScript and Bootstrap -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
