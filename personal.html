@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal - Mustahsin Aziz</title>
+    <title>About - Mustahsin Aziz</title>
     <style>
         /* General Styling */
         body, html {
@@ -11,7 +11,7 @@
             padding: 0;
             font-family: 'Arial', sans-serif;
             color: #ffffff;
-            background: url('assets/website_bg.jpg') no-repeat center center fixed; /* Set background image */
+            background: url('assets/personal/IMG_5571.jpg') no-repeat center center fixed; /* Set background image */
             background-size: cover; /* Ensure the image covers the entire page */
             height: 100%; /* Ensure full page coverage */
             display: flex;
@@ -53,8 +53,8 @@
             transition: color 0.3s ease-in-out;
         }
 
-        .nav-bar a:hover {
-            color: #32ab93; /* Updated hover color */
+        .nav-bar a:hover, .nav-bar a.active {
+            color: #32ab93; /* Updated hover and active color */
         }
 
         /* Main About Section */
@@ -85,15 +85,6 @@
         .about-text p {
             font-size: 18px;
             line-height: 1.6;
-        }
-
-        /* Image Styling */
-        .about-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 8px;
-            margin-right: 20px;
-            transition: transform 0.3s ease-in-out;
         }
 
         /* Scrolling Photo Section */
@@ -181,15 +172,14 @@
             </div>
             <!-- Right Side: Other Links -->
             <div class="nav-right">
-                <a href="projects.html">Projects</a>
-                <a href="personal.html">Personal</a>
+                <a href="projects.html">Portfolio</a>
+                <a href="about.html" class="active">About</a> <!-- Active state applied -->
                 <a href="contact.html">Contact</a>
             </div>
         </div>
 
         <!-- About Me Section -->
         <section class="about-section">
-            <img src="assets/stockimg.webp" alt="Personal Image" class="about-image">
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
@@ -201,27 +191,39 @@
         <!-- Photo Gallery Section -->
         <section class="photo-gallery">
             <div class="gallery-item">
-                <img src="assets/stockimg.webp" alt="Stock Image 1">
+                <img src="assets/personal/IMG_6513.jpg" alt="Stock Image 1">
                 <div class="caption-box">
-                    <div class="caption-text">My Work</div>
+                    <div class="caption-text">My Family</div>
                 </div>
             </div>
             <div class="gallery-item" style="height: 400px;">
-                <img src="assets/stockimg.webp" alt="Stock Image 2">
+                <img src="assets/personal/IMG_7236.jpg" alt="Stock Image 2">
                 <div class="caption-box">
-                    <div class="caption-text">Field Research</div>
+                    <div class="caption-text">Post Presentation</div>
+                </div>
+            </div>
+            <div class="gallery-item" style="height: 400px;">
+                <img src="assets/personal/IMG_6897.jpg" alt="Stock Image 3">
+                <div class="caption-box">
+                    <div class="caption-text">Fish Dopiaza</div>
+                </div>
+            </div>
+            <div class="gallery-item" style="height: 400px;">
+                <img src="assets/personal/763EBC8F-E3CE-49D7-9463-20680FA3AEC1.jpg" alt="Stock Image 4">
+                <div class="caption-box">
+                    <div class="caption-text">Doha</div>
+                </div>
+            </div>
+            <div class="gallery-item" style="height: 400px;">
+                <img src="assets/personal/IMG_6599.jpg" alt="Stock Image 3">
+                <div class="caption-box">
+                    <div class="caption-text">Doha</div>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="assets/stockimg.webp" alt="Stock Image 3">
+                <img src="assets/personal/IMG_7169.jpg" alt="Stock Image 1">
                 <div class="caption-box">
-                    <div class="caption-text">Project Analysis</div>
-                </div>
-            </div>
-            <div class="gallery-item" style="width: 500px;">
-                <img src="assets/stockimg.webp" alt="Stock Image 4">
-                <div class="caption-box">
-                    <div class="caption-text">Digital Tools</div>
+                    <div class="caption-text">Morgantown</div>
                 </div>
             </div>
         </section>
