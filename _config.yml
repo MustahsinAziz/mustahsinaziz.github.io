@@ -56,9 +56,7 @@ address:
   - line: United States
 
 # Credits content
-credits: 
-  - line: 'Freelancer by <a href="http://startbootstrap.com">Start Bootstrap</a>.' 
-  - line: 'Background Photo by <a href="https://www.instagram.com/moveshootmush?igsh=MXJrMHYyMXh5bWoydg==">Mushfiq Khan</a>.'
+credits: 'Theme Freelancer by <a href="http://startbootstrap.com">Start Bootstrap</a>.' 'Background Photo by <a href="https://www.instagram.com/moveshootmush?igsh=MXJrMHYyMXh5bWoydg==">Mushfiq Khan</a>.'
 
 # Build settings
 markdown: kramdown
