@@ -1,13 +1,10 @@
-body {
-    overflow-x: hidden;
-}
-
+/* General Reset and Styles */
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c; /* Change the default background color */
+    overflow-x: hidden;
+    background-color: #1c1c1c; /* Set the default background color */
 }
-
 
 p {
     font-size: 20px;
@@ -30,59 +27,53 @@ header {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 1) 100%), url('../assets/website_bg.jpg') no-repeat center center;
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 80px; /* Reduced bottom padding for a shorter header */
+    padding-bottom: 80px;
 }
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 80px; /* Reduced bottom padding */
+    padding-bottom: 80px;
 }
 
 @media (min-width: 768px) {
     header .container {
         padding-top: 150px;
-        padding-bottom: 100px; /* Further reduced bottom padding for larger screens */
+        padding-bottom: 100px;
     }
 
     header .intro-text .name {
-        font-size: 60px; /* Larger font size for the name */
+        font-size: 60px;
         line-height: 70px;
     }
 
     header .intro-text .skills {
-        font-size: 28px; /* Adjusted skills font size */
+        font-size: 28px;
         line-height: 35px;
         font-weight: 400;
     }
 }
 
 header .intro-text {
-    margin-top: 50px; /* Adjusted margin for spacing */
+    margin-top: 50px;
 }
 
 header .intro-text .name {
-    font-size: 50px; /* Default size for smaller screens */
+    font-size: 50px;
     line-height: 60px;
     font-weight: 700;
 }
 
 header .intro-text .skills {
-    font-size: 24px; /* Default skills font size for smaller screens */
+    font-size: 24px;
     line-height: 30px;
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-/* General Reset and Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
 /* Portfolio Section */
 .portfolio-section {
-    background-color: #2c3e50; /* Dark background for portfolio section */
+    background-color: #2c3e50;
     color: white;
     padding: 60px 0;
 }
@@ -95,23 +86,24 @@ body, html {
     color: #fff;
 }
 
-
 /* Portfolio Grid */
 .portfolio-flex-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centered the grid */
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .portfolio-flex-grid .portfolio-item {
-    margin-bottom: 20px;
+    margin: 15px;
 }
 
 .portfolio-item {
     position: relative;
     overflow: hidden;
-    width: 250px; /* Reduced size of portfolio items */
-    height: 250px; /* Maintain square aspect ratio */
+    width: 250px;
+    height: 250px;
 }
 
 .portfolio-item .portfolio-link {
@@ -121,7 +113,7 @@ body, html {
 
 .portfolio-item img {
     width: 100%;
-    height: 100%; /* Adjusted height to match the new size */
+    height: 100%;
 }
 
 /* Hover Effect */
@@ -157,7 +149,7 @@ body, html {
 /* Responsive Layout for Portfolio */
 @media (min-width: 768px) {
     .portfolio-item {
-        width: 22%; /* Reduced width for larger screens */
+        width: 22%;
     }
 }
 
@@ -190,7 +182,7 @@ body, html {
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     border: solid 2px #fff;
-    color: #3498db; /* Customize this as needed */
+    color: #3498db;
     background: #fff;
 }
 
@@ -211,42 +203,4 @@ footer .footer-above {
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
-}
-
-/* Smaller image size for the portfolio items */
-.small-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-/* Ensure alignment for the header profile image */
-header img.img-responsive {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-    display: block;
-}
-
-/* About Section */
-.about-section {
-    background: #2c3e50;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.about-section h2 {
-    color: white;
-}
-
-.about-section p {
-    color: #ddd;
-}
-
-/* Location Line Styling */
-.location-line i {
-    color: #f39c12;
-    margin-right: 5px;
 }
