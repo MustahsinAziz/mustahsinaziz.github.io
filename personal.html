@@ -54,58 +54,89 @@
         }
 
         .nav-bar a:hover {
-            color: #32ab93; /* Change to green on hover */
+            color: #32ab93; /* Updated hover color */
         }
 
-        /* Personal Section */
-        .personal-section {
+        /* Main About Section */
+        .about-section {
             background-color: rgba(44, 62, 80, 0.3); /* Semi-transparent background */
             padding: 60px 20px;
             margin: 20px;
             border-radius: 8px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             text-align: center;
         }
 
-        .personal-content {
-            flex: 0 0 50%; /* Main text content takes half the space */
+        .about-header {
             padding: 20px;
-        }
-
-        .personal-content h2 {
-            font-size: 36px;
+            border: 2px solid #ffffff;
             margin-bottom: 20px;
+            width: 300px;
+            font-size: 28px;
         }
 
-        .personal-content p {
+        .about-content {
+            padding: 20px;
+            border: 2px solid #ffffff;
+            width: 600px;
             font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
         }
 
-        /* Image Styling */
-        .personal-images {
-            flex: 0 0 40%;
+        /* Scrolling Photo Section */
+        .photo-gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            gap: 10px;
+            margin: 30px;
+            gap: 20px;
         }
 
-        .personal-images img {
-            width: 150px;
-            height: 150px;
+        .gallery-item {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
             border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease-in-out;
         }
 
-        .personal-images img:hover {
+        /* Hover Effect */
+        .gallery-item:hover img {
             transform: scale(1.1);
+        }
+
+        /* Caption Overlay */
+        .caption-box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%; /* Cover half of the image */
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .caption-box {
+            opacity: 1;
+        }
+
+        .caption-text {
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
         }
 
         /* Footer Styling */
@@ -139,30 +170,44 @@
             <!-- Right Side: Other Links -->
             <div class="nav-right">
                 <a href="projects.html">Projects</a>
-                <a href="personal.html">Personal</a> <!-- Updated link name to Personal instead of About -->
+                <a href="personal.html">Personal</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
 
-        <!-- Personal Info Section -->
-        <section class="personal-section">
-            <!-- Main Content Section -->
-            <div class="personal-content">
-                <h2>About Me</h2>
-                <p>
-                    Hello! I'm Mustahsin Aziz, an Environmental Economist and Policy Enthusiast currently pursuing a PhD in Natural Resource Economics. I have a deep interest in addressing environmental challenges and sustainable development.
-                </p>
-                <p>
-                    I enjoy exploring various topics related to environmental economics, digital transformation, and project implementation. When I’m not researching, I love spending time in nature, learning new technologies, and contributing to meaningful projects.
-                </p>
+        <!-- About Me Section -->
+        <section class="about-section">
+            <div class="about-header">About Me</div>
+            <div class="about-content">
+                Hi, I'm Mustahsin Aziz. I am currently a PhD candidate in Natural Resource Economics, with a focus on addressing environmental challenges. I love exploring data-driven solutions, engaging in policy research, and contributing to sustainable development projects. 
             </div>
+        </section>
 
-            <!-- Image Section -->
-            <div class="personal-images">
-                <img src="assets/stockimg.webp" alt="Personal Image 1">
-                <img src="assets/stockimg.webp" alt="Personal Image 2">
-                <img src="assets/stockimg.webp" alt="Personal Image 3">
-                <img src="assets/stockimg.webp" alt="Personal Image 4">
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery">
+            <div class="gallery-item">
+                <img src="assets/stockimg.webp" alt="Stock Image 1">
+                <div class="caption-box">
+                    <div class="caption-text">My Work</div>
+                </div>
+            </div>
+            <div class="gallery-item" style="height: 400px;">
+                <img src="assets/stockimg.webp" alt="Stock Image 2">
+                <div class="caption-box">
+                    <div class="caption-text">Field Research</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/stockimg.webp" alt="Stock Image 3">
+                <div class="caption-box">
+                    <div class="caption-text">Project Analysis</div>
+                </div>
+            </div>
+            <div class="gallery-item" style="width: 500px;">
+                <img src="assets/stockimg.webp" alt="Stock Image 4">
+                <div class="caption-box">
+                    <div class="caption-text">Digital Tools</div>
+                </div>
             </div>
         </section>
 
