@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - Mustahsin Aziz</title>
+    <style>
+        /* General Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background: url('assets/website_bg.jpg') no-repeat center center fixed; /* Set background image */
+            background-size: cover; /* Ensure the image covers the entire page */
+            height: 100%; /* Ensure full page coverage */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Page Overlay */
+        .page-overlay {
+            background: rgba(0, 0, 0, 0.3); /* 30% opacity black overlay */
+            flex-grow: 1; /* Ensure it covers all available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensure footer stays at the bottom */
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(35, 49, 64, 0.9); /* Match the footer color */
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nav-left {
+            margin-left: 20px;
+        }
+
+        .nav-right {
+            margin-right: 20px;
+        }
+
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-bar a:hover {
+            color: #32ab93; /* Change to green on hover */
+        }
+
+        /* Personal Section */
+        .personal-section {
+            background-color: rgba(44, 62, 80, 0.3); /* Semi-transparent background */
+            padding: 60px 20px;
+            margin: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .personal-content {
+            flex: 0 0 50%; /* Main text content takes half the space */
+            padding: 20px;
+        }
+
+        .personal-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .personal-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Image Styling */
+        .personal-images {
+            flex: 0 0 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .personal-images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .personal-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(35, 49, 64, 0.9); /* Match the nav-bar color */
+            width: 100%; /* Ensure the footer spans the full width */
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        footer .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Overlay Wrapper -->
+    <div class="page-overlay">
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <!-- Left Side: Home Button -->
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+            </div>
+            <!-- Right Side: Other Links -->
+            <div class="nav-right">
+                <a href="projects.html">Projects</a>
+                <a href="personal.html">Personal</a> <!-- Updated link name to Personal instead of About -->
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <!-- Personal Info Section -->
+        <section class="personal-section">
+            <!-- Main Content Section -->
+            <div class="personal-content">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Mustahsin Aziz, an Environmental Economist and Policy Enthusiast currently pursuing a PhD in Natural Resource Economics. I have a deep interest in addressing environmental challenges and sustainable development.
+                </p>
+                <p>
+                    I enjoy exploring various topics related to environmental economics, digital transformation, and project implementation. When I’m not researching, I love spending time in nature, learning new technologies, and contributing to meaningful projects.
+                </p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="personal-images">
+                <img src="assets/stockimg.webp" alt="Personal Image 1">
+                <img src="assets/stockimg.webp" alt="Personal Image 2">
+                <img src="assets/stockimg.webp" alt="Personal Image 3">
+                <img src="assets/stockimg.webp" alt="Personal Image 4">
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="column">
+                <p>© 2024 Mustahsin Aziz. All Rights Reserved.</p>
+            </div>
+            <div class="column">
+                <p>Photo Credits: Background by Unsplash</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
