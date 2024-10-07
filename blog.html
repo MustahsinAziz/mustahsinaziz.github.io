@@ -16,6 +16,7 @@
             height: 100%; /* Ensure full page coverage */
             display: flex;
             flex-direction: column;
+            min-height: 100vh; /* Ensure body covers full viewport */
         }
 
         /* Page Overlay */
@@ -25,6 +26,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between; /* Ensure footer stays at the bottom */
+            min-height: 100vh; /* Ensure overlay spans the full height */
         }
 
         /* Navigation Bar */
@@ -167,7 +169,6 @@
         <section class="blog-section">
             <h2 class="blog-title">Recent Blog Posts</h2>
             <div class="blog-grid">
-                
                 <!-- Blog Post 1 -->
                 <div class="blog-card">
                     <a href="/blog/wb1.html">
@@ -177,6 +178,8 @@
                         </div>
                     </a>
                 </div>
+            </div>
+        </section>
 
         <!-- Footer Section -->
         <footer>
