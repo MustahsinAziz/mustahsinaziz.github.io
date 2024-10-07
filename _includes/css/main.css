@@ -222,12 +222,13 @@ footer .footer-below {
 
 /* Ensure alignment for the header profile image */
 header img.img-responsive {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    max-width: 150px; /* Set the maximum width */
+    height: auto; /* Maintain the original aspect ratio */
+    border-radius: 50%; /* Circular style */
     margin: 20px auto;
     display: block;
 }
+
 
 /* About Section */
 .about-section {
