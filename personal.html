@@ -59,29 +59,41 @@
 
         /* Main About Section */
         .about-section {
-            background-color: rgba(44, 62, 80, 0.3); /* Semi-transparent background */
+            display: flex;
+            justify-content: flex-end; /* Align text to the right */
+            align-items: center;
             padding: 60px 20px;
             margin: 20px;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            position: relative;
         }
 
-        .about-header {
+        .about-text {
+            max-width: 600px;
             padding: 20px;
-            border: 2px solid #ffffff;
+            background: linear-gradient(to right, rgba(44, 62, 80, 0.2), rgba(44, 62, 80, 0.8)); /* Feathered gradient */
+            text-align: right; /* Right-align text */
+            margin-right: 20px;
+            height: 300px; /* Match the height of the pictures */
+        }
+
+        .about-text h2 {
+            text-align: center; /* Center the title */
+            font-size: 36px;
             margin-bottom: 20px;
-            width: 300px;
-            font-size: 28px;
         }
 
-        .about-content {
-            padding: 20px;
-            border: 2px solid #ffffff;
-            width: 600px;
+        .about-text p {
             font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Image Styling */
+        .about-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
         }
 
         /* Scrolling Photo Section */
@@ -177,9 +189,12 @@
 
         <!-- About Me Section -->
         <section class="about-section">
-            <div class="about-header">About Me</div>
-            <div class="about-content">
-                Hi, I'm Mustahsin Aziz. I am currently a PhD candidate in Natural Resource Economics, with a focus on addressing environmental challenges. I love exploring data-driven solutions, engaging in policy research, and contributing to sustainable development projects. 
+            <img src="assets/stockimg.webp" alt="Personal Image" class="about-image">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Mustahsin Aziz. I am currently a PhD candidate in Natural Resource Economics, with a focus on addressing environmental challenges. I love exploring data-driven solutions, engaging in policy research, and contributing to sustainable development projects.
+                </p>
             </div>
         </section>
 
