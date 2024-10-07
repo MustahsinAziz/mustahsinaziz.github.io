@@ -25,6 +25,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between; /* Ensure footer stays at the bottom */
+            transition: background 0.5s ease-in-out;
+        }
+
+        /* Dark Overlay Effect when Scrolled */
+        .page-overlay.dark-overlay {
+            background: rgba(0, 0, 0, 0.7); /* Darker overlay when scrolling */
         }
 
         /* Navigation Bar */
@@ -163,17 +169,15 @@
 </head>
 <body>
     <!-- Page Overlay Wrapper -->
-    <div class="page-overlay">
+    <div class="page-overlay" id="pageOverlay">
         <!-- Navigation Bar -->
         <div class="nav-bar">
-            <!-- Left Side: Home Button -->
             <div class="nav-left">
                 <a href="index.html">Home</a>
             </div>
-            <!-- Right Side: Other Links -->
             <div class="nav-right">
                 <a href="projects.html">Portfolio</a>
-                <a href="about.html" class="active">About</a> <!-- Active state applied -->
+                <a href="about.html" class="active">About</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
@@ -209,7 +213,7 @@
                 </div>
             </div>
             <div class="gallery-item" style="height: 400px;">
-                <img src="assets/personal/763EBC8F-E3CE-49D7-9463-20680FA3AEC1.jpg" alt="Stock Image 4">
+                <img src="assets/personal/top1.jpg" alt="Stock Image 4">
                 <div class="caption-box">
                     <div class="caption-text">Doha</div>
                 </div>
@@ -228,7 +232,7 @@
             </div>
         </section>
 
-        <!-- Footer Section -->
+       <!-- Footer Section -->
         <footer>
             <div class="column">
                 <p>© 2024 Mustahsin Aziz. All Rights Reserved.</p>
@@ -238,5 +242,18 @@
             </div>
         </footer>
     </div>
+
+    <!-- JavaScript for Scroll Effect -->
+    <script>
+        const pageOverlay = document.getElementById('pageOverlay');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                pageOverlay.classList.add('dark-overlay');
+            } else {
+                pageOverlay.classList.remove('dark-overlay');
+            }
+        });
+    </script>
 </body>
 </html>
