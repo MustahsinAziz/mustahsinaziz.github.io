@@ -5,117 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects Overview - Mustahsin Aziz</title>
     <style>
-        /* General Styling */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: #ffffff;
-            background: url('/assets/projects.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    /* General Styling */
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        color: #ffffff;
+        background: url('/assets/projects.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-        /* Darker Overlay */
-        .background-overlay {
-            background: rgba(0, 0, 0, 0.8); /* Darker overlay */
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
+    /* Darker Overlay */
+    .background-overlay {
+        background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+        position: fixed; /* Keep the overlay fixed */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none; /* Prevent interaction with the overlay */
+    }
 
-        /* Content Container */
-        .content-container {
-            position: relative; /* Relative position to ensure text appears above the overlay */
-            z-index: 2;
-            padding: 40px;
-        }
+    /* Content Container */
+    .content-container {
+        position: relative; /* Relative position to ensure text appears above the overlay */
+        z-index: 2;
+        padding: 40px;
+    }
 
-        /* Navigation Bar */
-        .nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(35, 49, 64, 0.9);
-            padding: 15px;
-            width: 100%;
-            box-sizing: border-box;
-        }
+    /* Navigation Bar */
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(35, 49, 64, 0.9);
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
-        .nav-bar a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0 15px;
-            transition: color 0.3s ease-in-out;
-        }
+    .nav-bar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 15px;
+        transition: color 0.3s ease-in-out;
+    }
 
-        .nav-bar a:hover, .nav-bar a.active {
-            color: #32ab93;
-        }
+    .nav-bar a:hover, .nav-bar a.active {
+        color: #32ab93;
+    }
 
-        /* Project Section Styling */
-        .project-section {
-            padding: 40px 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            z-index: 2;
-            margin-top: 60px;
-        }
+    /* Project Section Styling */
+    .project-section {
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        margin-top: 60px;
+    }
 
-        .project-details {
-            width: 70%;
-            text-align: center; /* Centering the text */
-        }
+    .project-details {
+        width: 70%;
+        text-align: center; /* Centering the text */
+    }
 
-        .project-title {
-            font-size: 28px;
-            margin: 0;
-        }
+    .project-title {
+        font-size: 28px;
+        margin: 0;
+    }
 
-        .project-subtitle {
-            font-size: 20px;
-            margin: 10px 0;
-            color: #cfd8dc;
-        }
+    .project-subtitle {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #cfd8dc;
+    }
 
-        .horizontal-line {
-            width: 60%;
-            height: 2px;
-            background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-            margin: 10px 0;
-        }
+    .horizontal-line {
+        width: 60%;
+        height: 2px;
+        background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        margin: 10px 0;
+    }
 
-        .project-text {
-            text-align: justify;
-            line-height: 1.6;
-            margin: 20px auto;
-        }
+    .project-text {
+        text-align: justify;
+        line-height: 1.6;
+        margin: 20px auto;
+    }
 
-        /* Footer Styling */
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: rgba(35, 49, 64, 0.9);
-            width: 100%;
-            box-sizing: border-box;
-            z-index: 2;
-        }
+    /* Footer Styling */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: rgba(35, 49, 64, 0.9);
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+    }
 
-        footer .column {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+    footer .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
 </head>
 <body>
     <!-- Dark Overlay to Cover Background Image -->
