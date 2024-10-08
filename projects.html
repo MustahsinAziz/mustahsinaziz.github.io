@@ -57,6 +57,10 @@
             color: #32ab93; /* Change to green on hover */
         }
 
+        .nav-bar a:hover, .nav-bar a.active {
+            color: #32ab93; /* Updated hover and active color */
+        }
+
         /* Projects Section */
         .projects-section {
             background-color: rgba(44, 62, 80, 0.3); /* Semi-transparent background */
@@ -149,15 +153,15 @@
     <!-- Page Overlay Wrapper -->
     <div class="page-overlay">
         <!-- Navigation Bar -->
-        <div class="nav-bar">
-            <!-- Left Side: Home Button -->
+       <div class="nav-bar">
             <div class="nav-left">
-                <a href="index.html">Home</a>
-            </div>
-            <!-- Right Side: Other Links -->
+            </div>    
             <div class="nav-right">
-                <a href="projects.html">Projects</a>
+                <a href="index.html">Home</a>
+                <a href="/assets/Aziz_CV.pdf" download>CV &#8681</a>
+                <a href="projects.html"class="active">Portfolio</a>
                 <a href="about.html">About</a>
+                <a href="blog.html">Blogs</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
