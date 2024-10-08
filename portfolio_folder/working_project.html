@@ -21,12 +21,15 @@
 
         /* Darker Overlay */
         .page-overlay {
-            background: rgba(0, 0, 0, 0.6); /* Increased opacity for a darker overlay */
-            flex-grow: 1; /* Ensure it covers all available space */
+            background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+            flex-grow: 1; 
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensure footer stays at the bottom */
-            min-height: 100vh; /* Ensure overlay spans the full height */
+            justify-content: space-between; 
+            min-height: 100vh; 
+            position: fixed; /* Keep overlay fixed */
+            width: 100%;
+            z-index: 1;
         }
 
         /* Navigation Bar */
@@ -38,6 +41,7 @@
             padding: 15px;
             width: 100%;
             box-sizing: border-box;
+            z-index: 2;
         }
 
         .nav-bar a {
@@ -56,20 +60,23 @@
             padding: 40px 60px;
             display: flex;
             align-items: center;
+            z-index: 2;
+            margin-top: 60px;
         }
 
         .project-image {
-            width: 40%;
+            width: 30%; /* Smaller width for uniform size */
             margin: 0 20px;
         }
 
         .project-image img {
             width: 100%;
+            height: 200px; /* Uniform height */
             border-radius: 8px;
         }
 
         .project-details {
-            width: 60%;
+            width: 70%;
             text-align: left;
         }
 
@@ -99,6 +106,7 @@
             background-color: rgba(35, 49, 64, 0.9);
             width: 100%;
             box-sizing: border-box;
+            z-index: 2;
         }
 
         footer .column {
@@ -110,7 +118,10 @@
 </head>
 <body>
     <!-- Page Overlay Wrapper -->
-    <div class="page-overlay">
+    <div class="page-overlay"></div> <!-- Darker background overlay -->
+
+    <!-- Main Content -->
+    <div class="main-content">
         <!-- Navigation Bar -->
         <div class="nav-bar">
             <div class="nav-left">
@@ -126,6 +137,19 @@
             </div>
         </div>
 
+        <section class="project-section">
+            <div class="project-image">
+                <img src="/assets/portfolio/airq.jpeg" alt="Project Image 1">
+            </div>
+            <div class="project-details">
+                <h2 class="project-title">Invisible barrier: the impact of air quality on chronic school absenteeism in the US</h2>
+                <div class="horizontal-line"></div>
+                <p class="project-text">
+                    Persistent school absence can harm learning outcomes and lead to substantial socioeconomic setbacks. While regional studies have documented the connection between overall school attendance and air quality, the impact of air pollution on chronic absenteeism, which matters most for socioeconomic outcomes, remains unexplored. We address this gap using a national sample of K-12 schools and data for six criteria air pollutants monitored by the U.S. Environmental Protection Agency (EPA). We find a statistically significant and heterogeneous impact of air pollution on chronic absenteeism, even when pollution is below the EPA-recommended thresholds. Using wind direction as an instrumental variable, we find that an additional bad CO, NO2, or PM2.5 air quality day can increase chronic absenteeism by 0.6%, 0.2%, and 0.2%, respectively. These estimates suggest that an additional bad air quality day across the U.S. can increase the number of chronically absent students by up to 54,000 annually. We also document the uneven distribution of the impact on chronic absenteeism across racial, income, and age demographics. With a documented systematic impact of air quality on school attendance, our work adds valuable insights to the ongoing conversation about environmental impacts on education.                
+                </p>
+            </div>
+        </section>
+
         <!-- Project Section 1 -->
         <section class="project-section">
             <div class="project-image">
@@ -135,7 +159,7 @@
                 <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery. Unlike prior research, which focused on micro-level office settings or specific regions, this study provides a broader perspective, demonstrating how urban greenspaces can enhance productivity on a national and international scale. The results have significant implications for urban planning, suggesting that investing in greener environments could foster economic growth. Future research will refine the methodology, explore regional differences, and investigate potential nonlinear effects to further validate these findings.
+                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery.
                 </p>
             </div>
         </section>
@@ -149,7 +173,7 @@
                 <h2 class="project-title">The Impact of Agriculture nutrient runoff on Downstream Drinking Water Compliance.</h2>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    Agricultural runoff, primarily driven by nitrogen (N) and phosphorus (P) inputs, presents a major threat to the quality of freshwater resources. In the U.S., the Environmental Protection Agency (EPA) reports widespread nutrient impairment, with approximately 15,000 water bodies affected by nutrient pollution. Upstream agricultural practices, such as excessive fertilizer use, play a critical role in degrading downstream water quality, impacting ecosystems and increasing treatment costs for drinking water facilities. This study aims to examine the extent to which agricultural runoff contributes to violations of the Safe Drinking Water Act (SDWA) in downstream Community Water Systems (CWS). Leveraging comprehensive EPA data on CWS compliance and detailed agricultural records from the USDA, we employ spatial regression models and GIS techniques to capture the complex interactions between agricultural activities and water quality. Our findings will quantify the externalities of agricultural production on water resources and inform targeted interventions to mitigate nutrient pollution. This research addresses critical gaps in understanding the nexus between upstream nutrient runoff and downstream drinking water compliance, offering insights into the efficacy of current regulations and management strategies. The outcomes will be instrumental for policymakers seeking to enhance sustainable water management and protect public health.
+                    Agricultural runoff, primarily driven by nitrogen (N) and phosphorus (P) inputs, presents a major threat to the quality of freshwater resources. Leveraging comprehensive EPA data on CWS compliance and detailed agricultural records from the USDA, we employ spatial regression models and GIS techniques to capture the complex interactions between agricultural activities and water quality.
                 </p>
             </div>
         </section>
@@ -157,13 +181,13 @@
         <!-- Project Section 3 -->
         <section class="project-section">
             <div class="project-image">
-                <img src="/assets/portfolio/transport.jpeg" alt="Project Image 2">
+                <img src="/assets/portfolio/transport.jpeg" alt="Project Image 3">
             </div>
             <div class="project-details">
                 <h2 class="project-title">Exploring the effectiveness of Regional Transport Planning Organization</h2>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    This paper examines the effectiveness of Regional Transportation Planning Organizations (RTPOs) in improving rural and regional planning. RTPOs serve as a formalized platform for engaging local officials in non-metropolitan areas with populations under 50,000, integrating rural needs into the statewide transportation planning process. Established through the Moving Ahead for Progress in the 21st Century (MAP-21) Act, RTPOs were introduced to address the gaps in rural transportation planning by promoting a more cooperative, comprehensive, and continuing (3C) planning approach. Despite the significant geographic area represented by non-metropolitan regions, their transportation needs have historically been underrepresented. By providing a structured mechanism for rural stakeholders to collaborate and influence state transportation strategies, RTPOs aim to enhance planning efficiency and ensure equitable allocation of resources. This paper analyzes the role of RTPOs in fostering rural engagement and assesses their impact on transportation outcomes across different states. The findings will inform whether RTPOs are a viable model for advancing rural transportation planning and achieving balanced regional development.
+                    This paper examines the effectiveness of Regional Transportation Planning Organizations (RTPOs) in improving rural and regional planning. RTPOs serve as a formalized platform for engaging local officials in non-metropolitan areas with populations under 50,000, integrating rural needs into the statewide transportation planning process.
                 </p>
             </div>
         </section>
