@@ -17,45 +17,36 @@
     }
 
     /* Full-width Nav Bar */
-    .nav-bar {
-        background-color: rgba(35, 49, 64, 0.9);
-        width: 100%;
-        padding: 15px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-    }
+/* Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(35, 49, 64, 0.9); /* Match the footer color */
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
+        .nav-left {
+            margin-left: 20px;
+        }
 
-    .nav-menu {
-        display: flex;
-        list-style-type: none;
-    }
+        .nav-right {
+            margin-right: 20px;
+        }
 
-    .nav-menu li {
-        margin-left: 20px;
-    }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
 
-    .nav-menu a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 0 15px;
-        transition: color 0.3s ease-in-out;
-    }
+        .nav-bar a:hover, .nav-bar a.active {
+            color: #32ab93; /* Updated hover and active color */
+        }
 
-    .nav-menu a:hover, .nav-menu a.active {
-        color: #32ab93;
-    }
 
     /* Darker Overlay */
     .background-overlay {
@@ -144,16 +135,17 @@
     <!-- Content Container to Keep Text Above Overlay -->
     <div class="content-container">
         <!-- Navigation Bar -->
+       <!-- Navigation Bar -->
         <div class="nav-bar">
-            <div class="nav-container">
-                <a href="/index.html" class="nav-logo">Home</a>
-                <ul class="nav-menu">
-                    <li><a href="/assets/Aziz_CV.pdf" download>CV &#8681;</a></li>
-                    <li><a href="/projects.html" class="active">Portfolio</a></li>
-                    <li><a href="/personal.html">About</a></li>
-                    <li><a href="/blog.html">Blogs</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
+            <div class="nav-left">
+            </div>    
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="/assets/Aziz_CV.pdf" download>CV &#8681</a>
+                <a href="projects.html">Portfolio</a>
+                <a href="about.html" class="active">About</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
         <!-- Project Section 1 -->
