@@ -20,16 +20,21 @@
         }
 
         /* Darker Overlay */
-        .page-overlay {
+        .background-overlay {
             background: rgba(0, 0, 0, 0.8); /* Darker overlay */
-            flex-grow: 1; 
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; 
-            min-height: 100vh; 
-            position: fixed; /* Keep overlay fixed */
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
             z-index: 1;
+        }
+
+        /* Content Container */
+        .content-container {
+            position: relative; /* Relative position to ensure text appears above the overlay */
+            z-index: 2;
+            padding: 40px;
         }
 
         /* Navigation Bar */
@@ -41,7 +46,6 @@
             padding: 15px;
             width: 100%;
             box-sizing: border-box;
-            z-index: 2;
         }
 
         .nav-bar a {
@@ -114,11 +118,11 @@
     </style>
 </head>
 <body>
-    <!-- Page Overlay Wrapper -->
-    <div class="page-overlay"></div> <!-- Darker background overlay -->
+    <!-- Dark Overlay to Cover Background Image -->
+    <div class="background-overlay"></div>
 
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- Content Container to Keep Text Above Overlay -->
+    <div class="content-container">
         <!-- Navigation Bar -->
         <div class="nav-bar">
             <div class="nav-left">
@@ -158,13 +162,22 @@
             </div>
         </section>
 
-        <!-- Project Section 3 -->
         <section class="project-section">
             <div class="project-details">
-                <h2 class="project-title">The Impact of Agriculture nutrient runoff on Downstream Drinking Water Compliance</h2>
+                <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    Agricultural runoff, primarily driven by nitrogen (N) and phosphorus (P) inputs, presents a major threat to the quality of freshwater resources. Leveraging comprehensive EPA data on CWS compliance and detailed agricultural records from the USDA, we employ spatial regression models and GIS techniques to capture the complex interactions between agricultural activities and water quality.
+                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <div class="project-details">
+                <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
+                <div class="horizontal-line"></div>
+                <p class="project-text">
+                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery.
                 </p>
             </div>
         </section>
