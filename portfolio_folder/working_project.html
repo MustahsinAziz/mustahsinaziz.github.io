@@ -59,30 +59,26 @@
         .project-section {
             padding: 40px 60px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             z-index: 2;
             margin-top: 60px;
         }
 
-        .project-image {
-            width: 30%; /* Smaller width for uniform size */
-            margin: 0 20px;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 200px; /* Uniform height */
-            border-radius: 8px;
-        }
-
         .project-details {
             width: 70%;
-            text-align: left;
+            text-align: center; /* Centering the text */
         }
 
         .project-title {
             font-size: 28px;
             margin: 0;
+        }
+
+        .project-subtitle {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #cfd8dc;
         }
 
         .horizontal-line {
@@ -95,6 +91,7 @@
         .project-text {
             text-align: justify;
             line-height: 1.6;
+            margin: 20px auto;
         }
 
         /* Footer Styling */
@@ -137,24 +134,21 @@
             </div>
         </div>
 
+        <!-- Project Section 1 -->
         <section class="project-section">
-            <div class="project-image">
-                <img src="/assets/portfolio/airq.jpeg" alt="Project Image 1">
-            </div>
             <div class="project-details">
                 <h2 class="project-title">Invisible barrier: the impact of air quality on chronic school absenteeism in the US</h2>
+                <!-- Subtitle Added -->
+                <h3 class="project-subtitle">(Currently under review at Environmental and Resource Economics)</h3>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    Persistent school absence can harm learning outcomes and lead to substantial socioeconomic setbacks. While regional studies have documented the connection between overall school attendance and air quality, the impact of air pollution on chronic absenteeism, which matters most for socioeconomic outcomes, remains unexplored. We address this gap using a national sample of K-12 schools and data for six criteria air pollutants monitored by the U.S. Environmental Protection Agency (EPA). We find a statistically significant and heterogeneous impact of air pollution on chronic absenteeism, even when pollution is below the EPA-recommended thresholds. Using wind direction as an instrumental variable, we find that an additional bad CO, NO2, or PM2.5 air quality day can increase chronic absenteeism by 0.6%, 0.2%, and 0.2%, respectively. These estimates suggest that an additional bad air quality day across the U.S. can increase the number of chronically absent students by up to 54,000 annually. We also document the uneven distribution of the impact on chronic absenteeism across racial, income, and age demographics. With a documented systematic impact of air quality on school attendance, our work adds valuable insights to the ongoing conversation about environmental impacts on education.                
+                    Persistent school absence can harm learning outcomes and lead to substantial socioeconomic setbacks. While regional studies have documented the connection between overall school attendance and air quality, the impact of air pollution on chronic absenteeism, which matters most for socioeconomic outcomes, remains unexplored. We address this gap using a national sample of K-12 schools and data for six criteria air pollutants monitored by the U.S. Environmental Protection Agency (EPA). We find a statistically significant and heterogeneous impact of air pollution on chronic absenteeism, even when pollution is below the EPA-recommended thresholds.
                 </p>
             </div>
         </section>
 
-        <!-- Project Section 1 -->
+        <!-- Project Section 2 -->
         <section class="project-section">
-            <div class="project-image">
-                <img src="/assets/portfolio/gren.jpeg" alt="Project Image 1">
-            </div>
             <div class="project-details">
                 <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
                 <div class="horizontal-line"></div>
@@ -164,30 +158,13 @@
             </div>
         </section>
 
-        <!-- Project Section 2 -->
+        <!-- Project Section 3 -->
         <section class="project-section">
-            <div class="project-image">
-                <img src="/assets/portfolio/upstream.jpeg" alt="Project Image 2">
-            </div>
             <div class="project-details">
-                <h2 class="project-title">The Impact of Agriculture nutrient runoff on Downstream Drinking Water Compliance.</h2>
+                <h2 class="project-title">The Impact of Agriculture nutrient runoff on Downstream Drinking Water Compliance</h2>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
                     Agricultural runoff, primarily driven by nitrogen (N) and phosphorus (P) inputs, presents a major threat to the quality of freshwater resources. Leveraging comprehensive EPA data on CWS compliance and detailed agricultural records from the USDA, we employ spatial regression models and GIS techniques to capture the complex interactions between agricultural activities and water quality.
-                </p>
-            </div>
-        </section>
-
-        <!-- Project Section 3 -->
-        <section class="project-section">
-            <div class="project-image">
-                <img src="/assets/portfolio/transport.jpeg" alt="Project Image 3">
-            </div>
-            <div class="project-details">
-                <h2 class="project-title">Exploring the effectiveness of Regional Transport Planning Organization</h2>
-                <div class="horizontal-line"></div>
-                <p class="project-text">
-                    This paper examines the effectiveness of Regional Transportation Planning Organizations (RTPOs) in improving rural and regional planning. RTPOs serve as a formalized platform for engaging local officials in non-metropolitan areas with populations under 50,000, integrating rural needs into the statewide transportation planning process.
                 </p>
             </div>
         </section>
