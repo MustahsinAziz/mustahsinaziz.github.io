@@ -13,7 +13,7 @@
         color: #ffffff;
         background: url('/assets/projects.jpeg') no-repeat center center fixed;
         background-size: cover;
-        height: 100%;
+        min-height: 100vh;
     }
 
     /* Full-width Nav Bar */
@@ -21,10 +21,6 @@
         background-color: rgba(35, 49, 64, 0.9);
         width: 100%;
         padding: 15px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -60,13 +56,12 @@
     /* Darker Overlay */
     .background-overlay {
         background: rgba(0, 0, 0, 0.8); /* Darker overlay */
-        position: fixed; /* Keep the overlay fixed */
+        position: absolute; /* Keep the overlay on top of the content */
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         z-index: 1;
-        pointer-events: none; /* Prevent interaction with the overlay */
     }
 
     /* Content Container */
@@ -123,10 +118,8 @@
         background-color: rgba(35, 49, 64, 0.9);
         width: 100%;
         box-sizing: border-box;
-        position: fixed; /* Fix the footer at the bottom */
         bottom: 0;
         left: 0;
-        z-index: 2;
         box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -146,9 +139,8 @@
         <!-- Navigation Bar -->
         <div class="nav-bar">
             <div class="nav-container">
-                
                 <ul class="nav-menu">
-                    <li><a href="/index.html";</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="/assets/Aziz_CV.pdf" download>CV &#8681;</a></li>
                     <li><a href="/projects.html" class="active">Portfolio</a></li>
                     <li><a href="/personal.html">About</a></li>
@@ -157,6 +149,7 @@
                 </ul>
             </div>
         </div>
+
         <!-- Project Section 1 -->
         <section class="project-section">
             <div class="project-details">
@@ -165,7 +158,7 @@
                 <h3 class="project-subtitle">(Currently under review at Environmental and Resource Economics)</h3>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    Persistent school absence can harm learning outcomes and lead to substantial socioeconomic setbacks. While regional studies have documented the connection between overall school attendance and air quality, the impact of air pollution on chronic absenteeism, which matters most for socioeconomic outcomes, remains unexplored. We address this gap using a national sample of K-12 schools and data for six criteria air pollutants monitored by the U.S. Environmental Protection Agency (EPA). We find a statistically significant and heterogeneous impact of air pollution on chronic absenteeism, even when pollution is below the EPA-recommended thresholds.
+                    Persistent school absence can harm learning outcomes and lead to substantial socioeconomic setbacks. While regional studies have documented the connection between overall school attendance and air quality, the impact of air pollution on chronic absenteeism, which matters most for socioeconomic outcomes, remains unexplored.
                 </p>
             </div>
         </section>
@@ -176,27 +169,7 @@
                 <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
                 <div class="horizontal-line"></div>
                 <p class="project-text">
-                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery.
-                </p>
-            </div>
-        </section>
-
-        <section class="project-section">
-            <div class="project-details">
-                <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
-                <div class="horizontal-line"></div>
-                <p class="project-text">
-                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery.
-                </p>
-            </div>
-        </section>
-
-        <section class="project-section">
-            <div class="project-details">
-                <h2 class="project-title">Nature at Work: The impact of Greenspace on Worker Productivity</h2>
-                <div class="horizontal-line"></div>
-                <p class="project-text">
-                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation, with historical land cover data as an instrumental variable. The findings show that a one-unit increase in greenspace significantly boosts productivity by approximately $238,000, supporting previous literature on the benefits of greenery.
+                    This research examines the impact of greenspaces on labor productivity using a national dataset of 3,007 U.S. counties from 2010 to 2019. Utilizing NDVI values to measure greenery and GDP per worker as a productivity metric, the study employs a two-way fixed effects panel estimation.
                 </p>
             </div>
         </section>
