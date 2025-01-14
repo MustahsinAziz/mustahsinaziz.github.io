@@ -38,23 +38,11 @@
             box-sizing: border-box;
         }
 
-        .nav-left {
-            margin-left: 20px;
-        }
-
-        .nav-right {
-            margin-right: 20px;
-        }
-
         .nav-bar a {
             color: #ffffff;
             text-decoration: none;
             padding: 0 15px;
             transition: color 0.3s ease-in-out;
-        }
-
-        .nav-bar a:hover {
-            color: #32ab93; /* Change to green on hover */
         }
 
         .nav-bar a:hover, .nav-bar a.active {
@@ -64,70 +52,47 @@
         /* Projects Section */
         .projects-section {
             background-color: rgba(44, 62, 80, 0.3); /* Semi-transparent background */
-            padding: 60px 20px;
-            margin: 0;
+            padding: 40px 20px;
+            margin: 0 auto;
             border-radius: 8px;
-            flex-grow: 1; /* Take up remaining space */
+            max-width: 800px; /* Limit the width */
+            text-align: center; /* Center the text */
         }
 
-        .projects-title {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 36px;
-            color: #ffffff;
-        }
-
-        /* Project Grid */
-        .projects-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        /* Individual Project Items */
-        .project-card {
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
             position: relative;
-            width: 300px;
-            height: 300px;
-            background-color: rgba(44, 62, 80, 0.8); /* Set a solid background */
-            overflow: hidden;
-            border: 2px solid rgba(44, 62, 80, 0.8); /* Match background color */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* Hover Effect */
-        .project-card:hover img {
-            transform: scale(1.1);
-        }
-
-        /* Caption Overlay */
-        .project-caption {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            width: 80%; /* Set width for underline */
             text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .project-card:hover .project-caption {
-            opacity: 1;
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80%; /* Underline width */
+            height: 2px;
+            background-color: #ffffff;
+            margin: 10px auto 0 auto;
         }
 
-        .project-caption h4 {
-            margin: 0;
-            font-size: 20px;
-            color: #ffffff;
+        .section-content {
+            margin-top: 20px;
+            text-align: center; /* Center align the list */
+        }
+
+        .section-content ol {
+            padding-left: 0;
+            list-style-position: inside; /* Keep list aligned with text */
+        }
+
+        .section-content li {
+            margin-bottom: 15px;
+            font-size: 18px;
         }
 
         /* Footer Styling */
@@ -141,32 +106,24 @@
             box-sizing: border-box;
             position: relative;
         }
-
-        footer .column {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
     </style>
 </head>
 <body>
     <!-- Page Overlay Wrapper -->
     <div class="page-overlay">
         <!-- Navigation Bar -->
-       <div class="nav-bar">
-            <div class="nav-left">
-            </div>    
+        <div class="nav-bar">
             <div class="nav-right">
                 <a href="index.html">Home</a>
                 <a href="/assets/Aziz_CV.pdf" download>CV &#8681</a>
-                <a href="projects.html"class="active">Portfolio</a>
+                <a href="projects.html" class="active">Portfolio</a>
                 <a href="personal.html">About</a>
                 <a href="blog.html">Blogs</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
 
-         <!-- Projects Section -->
+        <!-- Projects Section -->
         <section class="projects-section">
             <h2 class="section-title">Publications</h2>
             <div class="section-content">
@@ -184,7 +141,6 @@
                 </ol>
             </div>
         </section>
-       
 
         <!-- Footer Section -->
         <footer>
