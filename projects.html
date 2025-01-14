@@ -57,7 +57,7 @@
             margin: 20px auto;
             border-radius: 8px;
             max-width: 800px; /* Limit the width */
-            text-align: center; /* Center the text */
+            text-align: left; /* Left-align the text */
         }
 
         .section-title {
@@ -83,17 +83,22 @@
 
         .section-content {
             margin-top: 20px;
-            text-align: center; /* Center align the list */
+            text-align: left; /* Left align the list */
         }
 
         .section-content ol {
-            padding-left: 0;
-            list-style-position: inside; /* Keep list aligned with text */
+            padding-left: 20px;
+            list-style-position: outside; /* Standard left alignment */
         }
 
         .section-content li {
             margin-bottom: 15px;
             font-size: 18px;
+        }
+
+        .section-content a {
+            color: #ffffff; /* White color for DOI links */
+            text-decoration: underline; /* Keep them underlined */
         }
 
         /* Footer Styling */
@@ -138,8 +143,8 @@
             <h2 class="section-title">Working Papers</h2>
             <div class="section-content">
                 <ol>
-                    <li>Aziz, M., & Stephens, H., Nature at Work: The role of Urban Greenspace on Workers’ Amenity</li>
-                    <li>Aziz, M., & Elbakidze, L., Safe Drinking Water Act compliance and nutrient runoff from agricultural production</li>
+                    <li> Aziz, M., & Stephens, H., Nature at Work: The role of Urban Greenspace on Workers’ Amenity </li>
+                    <li> Aziz, M., & Elbakidze, L., Safe Drinking Water Act compliance and nutrient runoff from agricultural production </li>
                 </ol>
             </div>
         </section>
@@ -150,7 +155,7 @@
                 <p>© 2024 Mustahsin Aziz. All Rights Reserved.</p>
             </div>
             <div class="column">
-                <p></p>
+                <p>Photo Credits: Background by Unsplash</p>
             </div>
         </footer>
     </div>
